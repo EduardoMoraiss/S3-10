@@ -1,32 +1,10 @@
-let array = [" Rafael ", " Manoel ", " Daniel "];
+let competidores = [];
 function positions(firstPlace, secondPlace, lastPlace) {
-  if (lastPlace === " Daniel ") {
-    console.log(
-      " 1 - Colocado:" +
-        firstPlace +
-        " 2 - Colocado:" +
-        lastPlace +
-        " 3 - Colocado:" +
-        secondPlace
-    );
-  } else if (secondPlace === " Daniel ") {
-    console.log(
-      " 1 - Colocado:" +
-        secondPlace +
-        " 2 - Colocado:" +
-        firstPlace +
-        " 3 - Colocado:" +
-        lastPlace
-    );
-  } else {
-    console.log(
-      " 1 - Colocado:" +
-        firstPlace +
-        " 2 - Colocado:" +
-        secondPlace +
-        " 3 - Colocado:" +
-        lastPlace
+  if (lastPlace === "Daniel") {
+    competidores.push(
+      `1 - Colocado: ${firstPlace} 2 - Colocado: ${lastPlace} 3 - Colocado: ${secondPlace}`
     );
   }
+  return competidores;
 }
-console.log(positions(" Daniel ", " Rafael ", " Manoel "));
+console.log(positions("Rafael", "Manoel", "Daniel"));
