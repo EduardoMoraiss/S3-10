@@ -9,7 +9,10 @@ function positions(firstPlace, secondPlace, lastPlace) {
       `1 - Colocado: ${secondPlace} 2 - Colocado: ${firstPlace} 3 - Colocado: ${lastPlace}`
     );
   } else {
-    return `1 - Colocado: ${firstPlace} 2 - Colocado: ${secondPlace} 3 - Colocado: ${lastPlace}`;
+    competidores.push(
+      `1 - Colocado: ${firstPlace} 2 - Colocado: ${secondPlace} 3 - Colocado: ${lastPlace}`
+    );
   }
+  return competidores;
 }
 console.log(positions("Daniel", "Rafael", "Manoel"));
